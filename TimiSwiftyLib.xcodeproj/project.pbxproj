@@ -16,6 +16,7 @@
 		CED9A422245B932200113F61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED9A421245B932200113F61 /* Assets.xcassets */; };
 		CED9A425245B932200113F61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED9A424245B932200113F61 /* Preview Assets.xcassets */; };
 		CED9A428245B932200113F61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED9A426245B932200113F61 /* LaunchScreen.storyboard */; };
+		CED9A42E245B9CB500113F61 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED9A42D245B9CB500113F61 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		CED9A424245B932200113F61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CED9A427245B932200113F61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED9A429245B932200113F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED9A42D245B9CB500113F61 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				CED9A3FE245B929D00113F61 /* TimiSwiftyLib.h */,
 				CED9A3FF245B929D00113F61 /* Info.plist */,
+				CED9A42D245B9CB500113F61 /* SwiftyLib.swift */,
 			);
 			path = TimiSwiftyLib;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				TargetAttributes = {
 					CED9A3FA245B929D00113F61 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					CED9A403245B929D00113F61 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -271,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED9A42E245B9CB500113F61 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		CED9A410245B929D00113F61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VQ96AQRU3R;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = oyeleke.TimiSwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		CED9A411245B929D00113F61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VQ96AQRU3R;
@@ -485,6 +493,7 @@
 		CED9A413245B929D00113F61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ96AQRU3R;
 				INFOPLIST_FILE = TimiSwiftyLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		CED9A414245B929D00113F61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VQ96AQRU3R;
 				INFOPLIST_FILE = TimiSwiftyLibTests/Info.plist;
